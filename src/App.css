@@ -1,0 +1,135 @@
+  @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+  * {
+    background-color: #333333;
+    color: #FFF;
+    font-family: 'Tektur', cursive;
+
+  }
+
+  /* Style for the entire Countdown component */
+  .countdown-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  /* Style for the timer inputs */
+  .time-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .time-inputs input[type="number"] {
+    width: 75px;
+    height: 75px;
+    border-style: groove;
+    font-size: 50px;
+    padding: 5px;
+    margin: 0 5px;
+    text-align: center;
+
+
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfi ld;
+
+  }
+
+  /* Style for the Start button */
+  .start-button {
+
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Style for the countdown display */
+  .countdown {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* Style for the controllers (Pause and Cancel buttons) */
+  .controllers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .controllers button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
